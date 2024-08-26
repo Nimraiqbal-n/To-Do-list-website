@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Organize Your Day, Week, and Month with Ease!</h1>
+            <input type="date" id="date-picker">
+        </header>
+        <main>
+            <div class="task-column">
+                <h2>Today</h2>
+                <div class="input-container">
+                    <input type="text" id="today-task-input" placeholder="Add a new task...">
+                    <button onclick="addTask('today-list', 'today-task-input')">Add</button>
+                    <button id="new-list-button" onclick="resetTodayTasks()">Reset Today's Tasks</button>
+
+                </div>
+                <ul id="today-list"></ul>
+            </div>
+            <div class="task-column">
+                <h2>This Week</h2>
+                <div class="input-container">
+                    <input type="text" id="week-task-input" placeholder="Add a new task...">
+                    <button onclick="addTask('week-list', 'week-task-input')">Add</button>
+                    <button id="new-list-button" onclick="resetWeekTasks()">Reset This Week's Tasks</button>
+
+                </div>
+                <ul id="week-list"></ul>
+            </div>
+            <div class="task-column">
+                <h2>This Month</h2>
+                <div class="input-container">
+                    <input type="text" id="month-task-input" placeholder="Add a new task...">
+                    <button onclick="addTask('month-list', 'month-task-input')">Add</button>
+                    <button id="new-list-button" onclick="resetMonthTasks()">Reset This Month's Tasks</button>
+                </div>
+                <ul id="month-list"></ul>
+            </div>
+        </main>
+        <footer>
+            <textarea id="notes" placeholder="Notes/Reminders"></textarea>
+            <div class="footer-buttons">
+                <button onclick="saveData()">Save</button>
+                <button onclick="resetTasks()">Reset Tasks</button>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
