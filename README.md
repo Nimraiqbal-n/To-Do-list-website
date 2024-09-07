@@ -1,4 +1,4 @@
-Todo List Website
+##Todo List Website
 
 A simple and intuitive Todo List website built with HTML, CSS, and JavaScript using amazing color color palette.
 
@@ -27,6 +27,10 @@ Code Structure
 - index.html: Main HTML file for the website
 - styles.css: CSS file for styling and layout
 - script.js: JavaScript file for dynamic functionality
+
+Screenshot 
+![image](https://github.com/user-attachments/assets/146d9fed-b25d-4ea3-8093-83df5580f97f)
+
 
 License
 
